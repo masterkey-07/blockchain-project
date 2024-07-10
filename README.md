@@ -18,6 +18,8 @@ Time de desenvolvimento, time de suporte, smart-meters
 
 Possibilitar a gestão inteligente da energia para distribuidores de energia elétrica, focando em pequenas e médias empresas
 
+> Idéia: A nossa "inteligência" se refere a possibilidade de ter uma maior confiaça no sistema de energia. (um sistema que seria capaz de prevenir um blackout).
+
 ### Customer Relationships
 
 Assistência técnica, promoções em smart-meters e atualizações gratuitas
