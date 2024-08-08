@@ -1,5 +1,17 @@
 # Blockchain Project
 
+## Apresentação do Projeto
+
+### Escopo
+
+### Tecnologias Utilizadas
+
+### O que já foi feito?
+
+### O que falta ser feito?
+
+### Como vai ser a demo?
+
 ## Business Model Canvas
 
 ### Key Partners
