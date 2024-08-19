@@ -4,7 +4,7 @@ from models.power_plant import PowerPlant
 from models.grid_simulator import GridSimulator
 from models.transmission_line import TransmissionLine
 
-STEPS = 5
+STEPS = 50
 TIME_PERIOD = 5/60
 M = 1_000_000
 

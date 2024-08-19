@@ -21,6 +21,7 @@ contract Substation {
 
     function distributeEnergy(address consumer, uint256 amount) external {
         require(registeredConsumers[consumer], "Consumer not registered");
+
         require(
             energyToken.transferFrom(msg.sender, consumer, amount),
             "Transfer failed"

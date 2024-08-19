@@ -1,105 +1,950 @@
-
-
 Simulated Step 1
 Substation Substation A started the distribution
-Producer Plant A generated 22360626 Wh
-Line A transmitted 21018988 Wh with a loss factor of 0.05
-Producer Plant B generated 55690614 Wh
-Line B transmitted 50121552 Wh with a loss factor of 0.03
-Household A received 5241022 of 5283915.0 Wh
-Household B received 6731880 of 6786975.0 Wh
-Factory A received 12959376 of 13065437.0 Wh
-Big Factory received 23104130 of 23293216.5 Wh
+Producer Plant A generated 19589185 Wh
+Line A transmitted 18413833 Wh with a loss factor of 0.05
+Producer Plant B generated 48788158 Wh
+Line B transmitted 43909342 Wh with a loss factor of 0.08
+Household A received 4343364 of 4378911.0 Wh
+Household B received 4217095 of 4251609.0 Wh
+Factory A received 14158008 of 14273879.0 Wh
+Big Factory received 19802352 of 19964417.0 Wh
 Substation Substation B started the distribution
-Producer Plant C generated 25152797 Wh
-Line C transmitted 23140573 Wh with a loss factor of 0.03
-Producer Plant B generated 27243455 Wh
-Line B transmitted 24519109 Wh with a loss factor of 0.04
-Household C received 5985359 of 6035182.0 Wh
-Household D received 6943854 of 7001655.0 Wh
-Factory B received 11629545 of 11726350.0 Wh
-Big Factory received 23100923 of 23293216.5 Wh
-
-
+Producer Plant C generated 21867968 Wh
+Line C transmitted 20118530 Wh with a loss factor of 0.02
+Producer Plant B generated 27375306 Wh
+Line B transmitted 24637775 Wh with a loss factor of 0.05
+Household C received 7270130 of 7331606.0 Wh
+Household D received 7868484 of 7935019.0 Wh
+Factory B received 9820674 of 9903717.0 Wh
+Big Factory received 19797015 of 19964417.0 Wh
 Simulated Step 2
 Substation Substation A started the distribution
-Producer Plant A generated 22687243 Wh
-Line A transmitted 21326008 Wh with a loss factor of 0.03
-Producer Plant B generated 56504076 Wh
-Line B transmitted 50853668 Wh with a loss factor of 0.09
-Household A received 7126475 of 7184799.0 Wh
-Household B received 5785724 of 5833075.0 Wh
-Factory A received 12909494 of 13015147.0 Wh
-Big Factory received 23178991 of 23368690.0 Wh
+Producer Plant A generated 24502643 Wh
+Line A transmitted 23032484 Wh with a loss factor of 0.01
+Producer Plant B generated 61025449 Wh
+Line B transmitted 54922904 Wh with a loss factor of 0.04
+Household A received 7331350 of 7391351.0 Wh
+Household B received 6191481 of 6242153.0 Wh
+Factory A received 11008331 of 11098425.0 Wh
+Big Factory received 26712111 of 26930726.0 Wh
 Substation Substation B started the distribution
-Producer Plant C generated 25669936 Wh
-Line C transmitted 23616341 Wh with a loss factor of 0.01
-Producer Plant B generated 27293140 Wh
-Line B transmitted 24563826 Wh with a loss factor of 0.08
-Household C received 7818636 of 7883587.0 Wh
-Household D received 4154497 of 4189009.0 Wh
-Factory B received 13030869 of 13139118.0 Wh
-Big Factory received 23176163 of 23368690.0 Wh
-
-
+Producer Plant C generated 26506841 Wh
+Line C transmitted 24386293 Wh with a loss factor of 0.06
+Producer Plant B generated 25253366 Wh
+Line B transmitted 22728029 Wh with a loss factor of 0.08
+Household C received 4187616 of 4221983.0 Wh
+Household D received 5479953 of 5524926.0 Wh
+Factory B received 10735239 of 10823341.0 Wh
+Big Factory received 26711512 of 26930726.0 Wh
 Simulated Step 3
 Substation Substation A started the distribution
-Producer Plant A generated 21526690 Wh
-Line A transmitted 20235088 Wh with a loss factor of 0.03
-Producer Plant B generated 53613642 Wh
-Line B transmitted 48252277 Wh with a loss factor of 0.08
-Household A received 4939887 of 4980316.0 Wh
-Household B received 6441651 of 6494371.0 Wh
-Factory A received 9017933 of 9091737.0 Wh
-Big Factory received 24043946 of 24240724.0 Wh
+Producer Plant A generated 23025267 Wh
+Line A transmitted 21643750 Wh with a loss factor of 0.06
+Producer Plant B generated 57345948 Wh
+Line B transmitted 51611353 Wh with a loss factor of 0.05
+Household A received 5323234 of 5366800.0 Wh
+Household B received 6428070 of 6480678.0 Wh
+Factory A received 14676866 of 14796983.0 Wh
+Big Factory received 23413466 of 23605084.0 Wh
 Substation Substation B started the distribution
-Producer Plant C generated 24971404 Wh
-Line C transmitted 22973691 Wh with a loss factor of 0.06
-Producer Plant B generated 28314794 Wh
-Line B transmitted 25483314 Wh with a loss factor of 0.09
-Household C received 6534731 of 6589400.0 Wh
-Household D received 5920685 of 5970217.0 Wh
-Factory B received 11961978 of 12062051.0 Wh
-Big Factory received 24039610 of 24240724.0 Wh
-
-
+Producer Plant C generated 26889749 Wh
+Line C transmitted 24738569 Wh with a loss factor of 0.01
+Producer Plant B generated 28036720 Wh
+Line B transmitted 25233048 Wh with a loss factor of 0.02
+Household C received 4297883 of 4333510.0 Wh
+Household D received 7975904 of 8042018.0 Wh
+Factory B received 14286803 of 14405230.0 Wh
+Big Factory received 23411025 of 23605084.0 Wh
 Simulated Step 4
 Substation Substation A started the distribution
-Producer Plant A generated 27216285 Wh
-Line A transmitted 25583307 Wh with a loss factor of 0.04
-Producer Plant B generated 67783955 Wh
-Line B transmitted 61005559 Wh with a loss factor of 0.05
-Household A received 6272840 of 6324178.0 Wh
-Household B received 4812825 of 4852214.0 Wh
-Factory A received 15915064 of 16045315.0 Wh
-Big Factory received 29794067 of 30037905.0 Wh
+Producer Plant A generated 20538883 Wh
+Line A transmitted 19306550 Wh with a loss factor of 0.01
+Producer Plant B generated 51153442 Wh
+Line B transmitted 46038097 Wh with a loss factor of 0.04
+Household A received 5534763 of 5580060.0 Wh
+Household B received 7330741 of 7390737.0 Wh
+Factory A received 9136482 of 9211256.0 Wh
+Big Factory received 21671330 of 21848690.0 Wh
 Substation Substation B started the distribution
-Producer Plant C generated 32509161 Wh
-Line C transmitted 29908428 Wh with a loss factor of 0.03
-Producer Plant B generated 25601072 Wh
-Line B transmitted 23040964 Wh with a loss factor of 0.05
-Household C received 5664903 of 5710414.0 Wh
-Household D received 6237813 of 6287927.0 Wh
-Factory B received 11248164 of 11338530.0 Wh
-Big Factory received 29798510 of 30037905.0 Wh
-
-
+Producer Plant C generated 21240082 Wh
+Line C transmitted 19540875 Wh with a loss factor of 0.02
+Producer Plant B generated 25361230 Wh
+Line B transmitted 22825107 Wh with a loss factor of 0.09
+Household C received 6984119 of 7042877.0 Wh
+Household D received 5366207 of 5411353.0 Wh
+Factory B received 8349243 of 8419485.0 Wh
+Big Factory received 21666411 of 21848690.0 Wh
 Simulated Step 5
 Substation Substation A started the distribution
-Producer Plant A generated 23456978 Wh
-Line A transmitted 22049559 Wh with a loss factor of 0.02
-Producer Plant B generated 58421150 Wh
-Line B transmitted 52579035 Wh with a loss factor of 0.07
-Household A received 7911544 of 7976293.0 Wh
-Household B received 5688655 of 5735212.0 Wh
-Factory A received 12267787 of 12368188.0 Wh
-Big Factory received 24380303 of 24579833.5 Wh
+Producer Plant A generated 20575342 Wh
+Line A transmitted 19340821 Wh with a loss factor of 0.02
+Producer Plant B generated 51244247 Wh
+Line B transmitted 46119822 Wh with a loss factor of 0.05
+Household A received 4666254 of 4704443.0 Wh
+Household B received 6399949 of 6452327.0 Wh
+Factory A received 13182498 of 13290385.0 Wh
+Big Factory received 20605970 of 20774611.5 Wh
 Substation Substation B started the distribution
-Producer Plant C generated 25696674 Wh
-Line C transmitted 23640940 Wh with a loss factor of 0.02
-Producer Plant B generated 26117377 Wh
-Line B transmitted 23505639 Wh with a loss factor of 0.01
-Household C received 6765532 of 6821455.0 Wh
-Household D received 7004484 of 7062383.0 Wh
-Factory B received 8998235 of 9072614.0 Wh
-Big Factory received 24378325 of 24579833.5 Wh
+Producer Plant C generated 23491725 Wh
+Line C transmitted 21612387 Wh with a loss factor of 0.07
+Producer Plant B generated 27997609 Wh
+Line B transmitted 25197848 Wh with a loss factor of 0.09
+Household C received 4516658 of 4554649.0 Wh
+Household D received 7709352 of 7774198.0 Wh
+Factory B received 13982896 of 14100510.0 Wh
+Big Factory received 20601328 of 20774611.5 Wh
+Simulated Step 6
+Substation Substation A started the distribution
+Producer Plant A generated 26893426 Wh
+Line A transmitted 25279820 Wh with a loss factor of 0.03
+Producer Plant B generated 66979853 Wh
+Line B transmitted 60281867 Wh with a loss factor of 0.06
+Household A received 5610486 of 5656403.0 Wh
+Household B received 4929119 of 4969460.0 Wh
+Factory A received 12882256 of 12987686.0 Wh
+Big Factory received 31069912 of 31324191.0 Wh
+Substation Substation B started the distribution
+Producer Plant C generated 33863509 Wh
+Line C transmitted 31154428 Wh with a loss factor of 0.05
+Producer Plant B generated 27333241 Wh
+Line B transmitted 24599916 Wh with a loss factor of 0.05
+Household C received 8036731 of 8101475.0 Wh
+Household D received 4298638 of 4333268.0 Wh
+Factory B received 12345114 of 12444567.0 Wh
+Big Factory received 31073859 of 31324191.0 Wh
+Simulated Step 7
+Substation Substation A started the distribution
+Producer Plant A generated 18722901 Wh
+Line A transmitted 17599526 Wh with a loss factor of 0.03
+Producer Plant B generated 46630621 Wh
+Line B transmitted 41967558 Wh with a loss factor of 0.02
+Household A received 4433604 of 4469890.0 Wh
+Household B received 4976047 of 5016772.0 Wh
+Factory A received 15317549 of 15442910.0 Wh
+Big Factory received 17419940 of 17562507.5 Wh
+Substation Substation B started the distribution
+Producer Plant C generated 20541205 Wh
+Line C transmitted 18897908 Wh with a loss factor of 0.05
+Producer Plant B generated 26797744 Wh
+Line B transmitted 24117969 Wh with a loss factor of 0.09
+Household C received 5896911 of 5946995.0 Wh
+Household D received 4753814 of 4794189.0 Wh
+Factory B received 14950549 of 15077527.0 Wh
+Big Factory received 17414602 of 17562507.5 Wh
+Simulated Step 8
+Substation Substation A started the distribution
+Producer Plant A generated 20279792 Wh
+Line A transmitted 19063004 Wh with a loss factor of 0.03
+Producer Plant B generated 50508160 Wh
+Line B transmitted 45457344 Wh with a loss factor of 0.04
+Household A received 4225455 of 4260037.0 Wh
+Household B received 4856155 of 4895899.0 Wh
+Factory A received 12610833 of 12714041.0 Wh
+Big Factory received 21413951 of 21589205.0 Wh
+Substation Substation B started the distribution
+Producer Plant C generated 22610098 Wh
+Line C transmitted 20801290 Wh with a loss factor of 0.02
+Producer Plant B generated 27353708 Wh
+Line B transmitted 24618337 Wh with a loss factor of 0.09
+Household C received 7052135 of 7111549.0 Wh
+Household D received 6220022 of 6272425.0 Wh
+Factory B received 10738631 of 10829103.0 Wh
+Big Factory received 21408838 of 21589205.0 Wh
+Simulated Step 9
+Substation Substation A started the distribution
+Producer Plant A generated 22755219 Wh
+Line A transmitted 21389905 Wh with a loss factor of 0.02
+Producer Plant B generated 56673373 Wh
+Line B transmitted 51006035 Wh with a loss factor of 0.09
+Household A received 6985897 of 7043071.0 Wh
+Household B received 4790412 of 4829618.0 Wh
+Factory A received 14277556 of 14394405.0 Wh
+Big Factory received 23171036 of 23360670.5 Wh
+Substation Substation B started the distribution
+Producer Plant C generated 26518526 Wh
+Line C transmitted 24397043 Wh with a loss factor of 0.03
+Producer Plant B generated 28085646 Wh
+Line B transmitted 25277081 Wh with a loss factor of 0.02
+Household C received 4553488 of 4591299.0 Wh
+Household D received 7448571 of 7510421.0 Wh
+Factory B received 14503772 of 14624205.0 Wh
+Big Factory received 23168291 of 23360670.5 Wh
+Simulated Step 10
+Substation Substation A started the distribution
+Producer Plant A generated 19424643 Wh
+Line A transmitted 18259164 Wh with a loss factor of 0.02
+Producer Plant B generated 48378355 Wh
+Line B transmitted 43540519 Wh with a loss factor of 0.06
+Household A received 4540395 of 4577554.0 Wh
+Household B received 4969765 of 5010438.0 Wh
+Factory A received 12908245 of 13013888.0 Wh
+Big Factory received 19690638 of 19851788.5 Wh
+Substation Substation B started the distribution
+Producer Plant C generated 20538755 Wh
+Line C transmitted 18895654 Wh with a loss factor of 0.03
+Producer Plant B generated 25917082 Wh
+Line B transmitted 23325373 Wh with a loss factor of 0.1
+Household C received 4295137 of 4331488.0 Wh
+Household D received 5465255 of 5511509.0 Wh
+Factory B received 12775442 of 12883563.0 Wh
+Big Factory received 19685190 of 19851788.5 Wh
+Simulated Step 11
+Substation Substation A started the distribution
+Producer Plant A generated 25508822 Wh
+Line A transmitted 23978292 Wh with a loss factor of 0.03
+Producer Plant B generated 63531405 Wh
+Line B transmitted 57178264 Wh with a loss factor of 0.04
+Household A received 6658715 of 6713211.0 Wh
+Household B received 5516660 of 5561809.0 Wh
+Factory A received 15813233 of 15942650.0 Wh
+Big Factory received 26583973 of 26801539.0 Wh
+Substation Substation B started the distribution
+Producer Plant C generated 32395455 Wh
+Line C transmitted 29803818 Wh with a loss factor of 0.02
+Producer Plant B generated 28879075 Wh
+Line B transmitted 25991167 Wh with a loss factor of 0.09
+Household C received 7746601 of 7809706.0 Wh
+Household D received 7904631 of 7969023.0 Wh
+Factory B received 13558776 of 13669227.0 Wh
+Big Factory received 26584975 of 26801539.0 Wh
+Simulated Step 12
+Substation Substation A started the distribution
+Producer Plant A generated 20342118 Wh
+Line A transmitted 19121590 Wh with a loss factor of 0.03
+Producer Plant B generated 50663386 Wh
+Line B transmitted 45597047 Wh with a loss factor of 0.01
+Household A received 6505900 of 6559145.0 Wh
+Household B received 7551435 of 7613237.0 Wh
+Factory A received 12238624 of 12338786.0 Wh
+Big Factory received 19211338 of 19368566.0 Wh
+Substation Substation B started the distribution
+Producer Plant C generated 22771440 Wh
+Line C transmitted 20949724 Wh with a loss factor of 0.07
+Producer Plant B generated 27462495 Wh
+Line B transmitted 24716245 Wh with a loss factor of 0.06
+Household C received 6553970 of 6609168.0 Wh
+Household D received 5410271 of 5455837.0 Wh
+Factory B received 14494922 of 14616999.0 Wh
+Big Factory received 19206805 of 19368566.0 Wh
+Simulated Step 13
+Substation Substation A started the distribution
+Producer Plant A generated 27800345 Wh
+Line A transmitted 26132324 Wh with a loss factor of 0.04
+Producer Plant B generated 69238594 Wh
+Line B transmitted 62314734 Wh with a loss factor of 0.1
+Household A received 8057717 of 8123663.0 Wh
+Household B received 4686959 of 4725318.0 Wh
+Factory A received 12033911 of 12132398.0 Wh
+Big Factory received 31834234 of 32094768.5 Wh
+Substation Substation B started the distribution
+Producer Plant C generated 35799309 Wh
+Line C transmitted 32935364 Wh with a loss factor of 0.07
+Producer Plant B generated 26919129 Wh
+Line B transmitted 24227216 Wh with a loss factor of 0.03
+Household C received 6446357 of 6497879.0 Wh
+Household D received 5290372 of 5332655.0 Wh
+Factory B received 13585559 of 13694140.0 Wh
+Big Factory received 31840290 of 32094768.5 Wh
+Simulated Step 14
+Substation Substation A started the distribution
+Producer Plant A generated 20155221 Wh
+Line A transmitted 18945907 Wh with a loss factor of 0.02
+Producer Plant B generated 50197907 Wh
+Line B transmitted 45178116 Wh with a loss factor of 0.05
+Household A received 7612240 of 7674540.0 Wh
+Household B received 5292494 of 5335809.0 Wh
+Factory A received 11237665 of 11329635.0 Wh
+Big Factory received 19990811 of 20154417.5 Wh
+Substation Substation B started the distribution
+Producer Plant C generated 20558728 Wh
+Line C transmitted 18914029 Wh with a loss factor of 0.01
+Producer Plant B generated 25027876 Wh
+Line B transmitted 22525088 Wh with a loss factor of 0.05
+Household C received 4994518 of 5036625.0 Wh
+Household D received 5696503 of 5744528.0 Wh
+Factory B received 10762170 of 10852902.0 Wh
+Big Factory received 19985924 of 20154417.5 Wh
+Simulated Step 15
+Substation Substation A started the distribution
+Producer Plant A generated 22176317 Wh
+Line A transmitted 20845737 Wh with a loss factor of 0.05
+Producer Plant B generated 55231581 Wh
+Line B transmitted 49708422 Wh with a loss factor of 0.08
+Household A received 8207523 of 8274695.0 Wh
+Household B received 6090108 of 6139951.0 Wh
+Factory A received 15147880 of 15271852.0 Wh
+Big Factory received 20554322 of 20722541.5 Wh
+Substation Substation B started the distribution
+Producer Plant C generated 22268477 Wh
+Line C transmitted 20486998 Wh with a loss factor of 0.02
+Producer Plant B generated 24369265 Wh
+Line B transmitted 21932338 Wh with a loss factor of 0.04
+Household C received 5589003 of 5635579.0 Wh
+Household D received 7972565 of 8039005.0 Wh
+Factory B received 8306489 of 8375711.0 Wh
+Big Factory received 20551277 of 20722541.5 Wh
+Simulated Step 16
+Substation Substation A started the distribution
+Producer Plant A generated 26594157 Wh
+Line A transmitted 24998507 Wh with a loss factor of 0.03
+Producer Plant B generated 66234503 Wh
+Line B transmitted 59611052 Wh with a loss factor of 0.02
+Household A received 5102756 of 5144518.0 Wh
+Household B received 6408253 of 6460699.0 Wh
+Factory A received 8647347 of 8718118.0 Wh
+Big Factory received 32225600 of 32489338.0 Wh
+Substation Substation B started the distribution
+Producer Plant C generated 37513440 Wh
+Line C transmitted 34512364 Wh with a loss factor of 0.08
+Producer Plant B generated 30962798 Wh
+Line B transmitted 27866518 Wh with a loss factor of 0.06
+Household C received 5517239 of 5561798.0 Wh
+Household D received 8102560 of 8167998.0 Wh
+Factory B received 16530030 of 16663530.0 Wh
+Big Factory received 32229050 of 32489338.0 Wh
+Simulated Step 17
+Substation Substation A started the distribution
+Producer Plant A generated 20012765 Wh
+Line A transmitted 18811999 Wh with a loss factor of 0.03
+Producer Plant B generated 49843113 Wh
+Line B transmitted 44858801 Wh with a loss factor of 0.07
+Household A received 6010210 of 6059399.0 Wh
+Household B received 5307430 of 5350867.0 Wh
+Factory A received 11363816 of 11456819.0 Wh
+Big Factory received 20494670 of 20662401.0 Wh
+Substation Substation B started the distribution
+Producer Plant C generated 23987425 Wh
+Line C transmitted 22068431 Wh with a loss factor of 0.06
+Producer Plant B generated 29409956 Wh
+Line B transmitted 26468960 Wh with a loss factor of 0.05
+Household C received 5795920 of 5844821.0 Wh
+Household D received 7609590 of 7673793.0 Wh
+Factory B received 14642349 of 14765887.0 Wh
+Big Factory received 20489530 of 20662401.0 Wh
+Simulated Step 18
+Substation Substation A started the distribution
+Producer Plant A generated 21490086 Wh
+Line A transmitted 20200680 Wh with a loss factor of 0.05
+Producer Plant B generated 53522477 Wh
+Line B transmitted 48170229 Wh with a loss factor of 0.04
+Household A received 4868994 of 4908843.0 Wh
+Household B received 5212121 of 5254778.0 Wh
+Factory A received 9074616 of 9148884.0 Wh
+Big Factory received 24607588 of 24808978.5 Wh
+Substation Substation B started the distribution
+Producer Plant C generated 25319040 Wh
+Line C transmitted 23293516 Wh with a loss factor of 0.05
+Producer Plant B generated 28765397 Wh
+Line B transmitted 25888857 Wh with a loss factor of 0.04
+Household C received 7086784 of 7146084.0 Wh
+Household D received 6742841 of 6799263.0 Wh
+Factory B received 10749640 of 10839590.0 Wh
+Big Factory received 24603107 of 24808978.5 Wh
+Simulated Step 19
+Substation Substation A started the distribution
+Producer Plant A generated 22181232 Wh
+Line A transmitted 20850358 Wh with a loss factor of 0.04
+Producer Plant B generated 55243822 Wh
+Line B transmitted 49719439 Wh with a loss factor of 0.09
+Household A received 5279805 of 5323016.0 Wh
+Household B received 5828061 of 5875759.0 Wh
+Factory A received 10308770 of 10393138.0 Wh
+Big Factory received 24576579 of 24777716.5 Wh
+Substation Substation B started the distribution
+Producer Plant C generated 26890340 Wh
+Line C transmitted 24739112 Wh with a loss factor of 0.02
+Producer Plant B generated 29419105 Wh
+Line B transmitted 26477194 Wh with a loss factor of 0.08
+Household C received 7362853 of 7424210.0 Wh
+Household D received 4607502 of 4645898.0 Wh
+Factory B received 14673005 of 14795279.0 Wh
+Big Factory received 24572944 of 24777716.5 Wh
+Simulated Step 20
+Substation Substation A started the distribution
+Producer Plant A generated 21805839 Wh
+Line A transmitted 20497488 Wh with a loss factor of 0.05
+Producer Plant B generated 54308881 Wh
+Line B transmitted 48877992 Wh with a loss factor of 0.09
+Household A received 7332325 of 7392334.0 Wh
+Household B received 6067480 of 6117137.0 Wh
+Factory A received 8633763 of 8704423.0 Wh
+Big Factory received 23670955 of 23864680.5 Wh
+Substation Substation B started the distribution
+Producer Plant C generated 25590097 Wh
+Line C transmitted 23542889 Wh with a loss factor of 0.05
+Producer Plant B generated 28581426 Wh
+Line B transmitted 25723283 Wh with a loss factor of 0.03
+Household C received 5995166 of 6045239.0 Wh
+Household D received 6026384 of 6076718.0 Wh
+Factory B received 13577609 of 13691011.0 Wh
+Big Factory received 23667011 of 23864680.5 Wh
+Simulated Step 21
+Substation Substation A started the distribution
+Producer Plant A generated 22645188 Wh
+Line A transmitted 21286476 Wh with a loss factor of 0.06
+Producer Plant B generated 56399336 Wh
+Line B transmitted 50759402 Wh with a loss factor of 0.1
+Household A received 4865741 of 4905563.0 Wh
+Household B received 5627649 of 5673707.0 Wh
+Factory A received 15072196 of 15195549.0 Wh
+Big Factory received 23240145 of 23430344.5 Wh
+Substation Substation B started the distribution
+Producer Plant C generated 23536052 Wh
+Line C transmitted 21653167 Wh with a loss factor of 0.06
+Producer Plant B generated 25084583 Wh
+Line B transmitted 22576124 Wh with a loss factor of 0.01
+Household C received 7881357 of 7946846.0 Wh
+Household D received 4558286 of 4596163.0 Wh
+Factory B received 8552387 of 8623452.0 Wh
+Big Factory received 23237259 of 23430344.5 Wh
+Simulated Step 22
+Substation Substation A started the distribution
+Producer Plant A generated 18695774 Wh
+Line A transmitted 17574027 Wh with a loss factor of 0.02
+Producer Plant B generated 46563059 Wh
+Line B transmitted 41906753 Wh with a loss factor of 0.01
+Household A received 6958431 of 7015380.0 Wh
+Household B received 4791952 of 4831170.0 Wh
+Factory A received 10777483 of 10865687.0 Wh
+Big Factory received 18476456 of 18627669.5 Wh
+Substation Substation B started the distribution
+Producer Plant C generated 19521374 Wh
+Line C transmitted 17959664 Wh with a loss factor of 0.06
+Producer Plant B generated 25499527 Wh
+Line B transmitted 22949574 Wh with a loss factor of 0.04
+Household C received 4320312 of 4357011.0 Wh
+Household D received 6816568 of 6874471.0 Wh
+Factory B received 11301582 of 11397582.0 Wh
+Big Factory received 18470773 of 18627669.5 Wh
+Simulated Step 23
+Substation Substation A started the distribution
+Producer Plant A generated 19669627 Wh
+Line A transmitted 18489449 Wh with a loss factor of 0.03
+Producer Plant B generated 48988505 Wh
+Line B transmitted 44089654 Wh with a loss factor of 0.07
+Household A received 6290017 of 6341496.0 Wh
+Household B received 5221969 of 5264707.0 Wh
+Factory A received 14963649 of 15086113.0 Wh
+Big Factory received 18051732 of 18199470.0 Wh
+Substation Substation B started the distribution
+Producer Plant C generated 19077786 Wh
+Line C transmitted 17551563 Wh with a loss factor of 0.03
+Producer Plant B generated 23789000 Wh
+Line B transmitted 21410100 Wh with a loss factor of 0.02
+Household C received 6717693 of 6774474.0 Wh
+Household D received 5080948 of 5123894.0 Wh
+Factory B received 9116089 of 9193142.0 Wh
+Big Factory received 18046931 of 18199470.0 Wh
+Simulated Step 24
+Substation Substation A started the distribution
+Producer Plant A generated 22730652 Wh
+Line A transmitted 21366812 Wh with a loss factor of 0.04
+Producer Plant B generated 56612188 Wh
+Line B transmitted 50950969 Wh with a loss factor of 0.09
+Household A received 5069895 of 5111388.0 Wh
+Household B received 7587063 of 7649157.0 Wh
+Factory A received 15817000 of 15946448.0 Wh
+Big Factory received 21921910 of 22101321.0 Wh
+Substation Substation B started the distribution
+Producer Plant C generated 28109248 Wh
+Line C transmitted 25860508 Wh with a loss factor of 0.06
+Producer Plant B generated 29812415 Wh
+Line B transmitted 26831173 Wh with a loss factor of 0.07
+Household C received 7595000 of 7658076.0 Wh
+Household D received 8044529 of 8111338.0 Wh
+Factory B received 15132865 of 15258541.0 Wh
+Big Factory received 21919285 of 22101321.0 Wh
+Simulated Step 25
+Substation Substation A started the distribution
+Producer Plant A generated 24056329 Wh
+Line A transmitted 22612949 Wh with a loss factor of 0.06
+Producer Plant B generated 59913875 Wh
+Line B transmitted 53922487 Wh with a loss factor of 0.05
+Household A received 5906598 of 5954939.0 Wh
+Household B received 4501058 of 4537896.0 Wh
+Factory A received 12057528 of 12156208.0 Wh
+Big Factory received 27035124 of 27256382.5 Wh
+Substation Substation B started the distribution
+Producer Plant C generated 30556720 Wh
+Line C transmitted 28112182 Wh with a loss factor of 0.04
+Producer Plant B generated 29942012 Wh
+Line B transmitted 26947810 Wh with a loss factor of 0.08
+Household C received 5528551 of 5574065.0 Wh
+Household D received 8161536 of 8228726.0 Wh
+Factory B received 14336075 of 14454096.0 Wh
+Big Factory received 27033828 of 27256382.5 Wh
+Simulated Step 26
+Substation Substation A started the distribution
+Producer Plant A generated 26560247 Wh
+Line A transmitted 24966632 Wh with a loss factor of 0.01
+Producer Plant B generated 66150049 Wh
+Line B transmitted 59535044 Wh with a loss factor of 0.04
+Household A received 7180632 of 7239399.0 Wh
+Household B received 4279506 of 4314530.0 Wh
+Factory A received 15715832 of 15844452.0 Wh
+Big Factory received 28662852 of 28897431.5 Wh
+Substation Substation B started the distribution
+Producer Plant C generated 33544785 Wh
+Line C transmitted 30861202 Wh with a loss factor of 0.03
+Producer Plant B generated 27756406 Wh
+Line B transmitted 24980765 Wh with a loss factor of 0.05
+Household C received 4960648 of 5000723.0 Wh
+Household D received 6369891 of 6421350.0 Wh
+Factory B received 15845569 of 15973577.0 Wh
+Big Factory received 28665856 of 28897431.5 Wh
+Simulated Step 27
+Substation Substation A started the distribution
+Producer Plant A generated 19888752 Wh
+Line A transmitted 18695426 Wh with a loss factor of 0.06
+Producer Plant B generated 49534250 Wh
+Line B transmitted 44580825 Wh with a loss factor of 0.06
+Household A received 5723600 of 5770443.0 Wh
+Household B received 7710747 of 7773853.0 Wh
+Factory A received 13435556 of 13545514.0 Wh
+Big Factory received 18203173 of 18352149.5 Wh
+Substation Substation B started the distribution
+Producer Plant C generated 22940584 Wh
+Line C transmitted 21105337 Wh with a loss factor of 0.04
+Producer Plant B generated 28299670 Wh
+Line B transmitted 25469703 Wh with a loss factor of 0.05
+Household C received 8161496 of 8230401.0 Wh
+Household D received 4551336 of 4589762.0 Wh
+Factory B received 15663698 of 15795941.0 Wh
+Big Factory received 18198507 of 18352149.5 Wh
+Simulated Step 28
+Substation Substation A started the distribution
+Producer Plant A generated 22319852 Wh
+Line A transmitted 20980660 Wh with a loss factor of 0.02
+Producer Plant B generated 55589063 Wh
+Line B transmitted 50030156 Wh with a loss factor of 0.04
+Household A received 4871015 of 4910880.0 Wh
+Household B received 4977199 of 5017933.0 Wh
+Factory A received 15970450 of 16101154.0 Wh
+Big Factory received 22596075 of 22781004.0 Wh
+Substation Substation B started the distribution
+Producer Plant C generated 27384477 Wh
+Line C transmitted 25193718 Wh with a loss factor of 0.06
+Producer Plant B generated 29728607 Wh
+Line B transmitted 26755746 Wh with a loss factor of 0.09
+Household C received 5195160 of 5238416.0 Wh
+Household D received 7886397 of 7952061.0 Wh
+Factory B received 16275013 of 16410522.0 Wh
+Big Factory received 22592892 of 22781004.0 Wh
+Simulated Step 29
+Substation Substation A started the distribution
+Producer Plant A generated 22469954 Wh
+Line A transmitted 21121756 Wh with a loss factor of 0.06
+Producer Plant B generated 55962903 Wh
+Line B transmitted 50366612 Wh with a loss factor of 0.03
+Household A received 6036288 of 6085690.0 Wh
+Household B received 6344334 of 6396257.0 Wh
+Factory A received 12071940 of 12170738.0 Wh
+Big Factory received 23517902 of 23710375.0 Wh
+Substation Substation B started the distribution
+Producer Plant C generated 25323692 Wh
+Line C transmitted 23297796 Wh with a loss factor of 0.05
+Producer Plant B generated 27260002 Wh
+Line B transmitted 24534001 Wh with a loss factor of 0.09
+Household C received 6050788 of 6101121.0 Wh
+Household D received 4455974 of 4493041.0 Wh
+Factory B received 13810265 of 13925145.0 Wh
+Big Factory received 23514769 of 23710375.0 Wh
+Simulated Step 30
+Substation Substation A started the distribution
+Producer Plant A generated 18433393 Wh
+Line A transmitted 17327389 Wh with a loss factor of 0.05
+Producer Plant B generated 45909582 Wh
+Line B transmitted 41318623 Wh with a loss factor of 0.04
+Household A received 8063595 of 8129589.0 Wh
+Household B received 4608309 of 4646024.0 Wh
+Factory A received 8380142 of 8448726.0 Wh
+Big Factory received 18796982 of 18950818.5 Wh
+Substation Substation B started the distribution
+Producer Plant C generated 20344100 Wh
+Line C transmitted 18716572 Wh with a loss factor of 0.04
+Producer Plant B generated 26899176 Wh
+Line B transmitted 24209258 Wh with a loss factor of 0.03
+Household C received 4525552 of 4564044.0 Wh
+Household D received 6269797 of 6323124.0 Wh
+Factory B received 13339483 of 13452939.0 Wh
+Big Factory received 18790996 of 18950818.5 Wh
+Simulated Step 31
+Substation Substation A started the distribution
+Producer Plant A generated 24669471 Wh
+Line A transmitted 23189302 Wh with a loss factor of 0.06
+Producer Plant B generated 61440946 Wh
+Line B transmitted 55296851 Wh with a loss factor of 0.09
+Household A received 4176615 of 4210797.0 Wh
+Household B received 5006992 of 5047970.0 Wh
+Factory A received 15354034 of 15479693.0 Wh
+Big Factory received 26974255 of 27195015.5 Wh
+Substation Substation B started the distribution
+Producer Plant C generated 33582888 Wh
+Line C transmitted 30896256 Wh with a loss factor of 0.02
+Producer Plant B generated 31653707 Wh
+Line B transmitted 28488336 Wh with a loss factor of 0.02
+Household C received 8182235 of 8249305.0 Wh
+Household D received 7823335 of 7887463.0 Wh
+Factory B received 16405108 of 16539580.0 Wh
+Big Factory received 26973912 of 27195015.5 Wh
+Simulated Step 32
+Substation Substation A started the distribution
+Producer Plant A generated 22137971 Wh
+Line A transmitted 20809692 Wh with a loss factor of 0.04
+Producer Plant B generated 55136077 Wh
+Line B transmitted 49622469 Wh with a loss factor of 0.03
+Household A received 5450527 of 5495135.0 Wh
+Household B received 7488433 of 7549719.0 Wh
+Factory A received 14039885 of 14154789.0 Wh
+Big Factory received 21726657 of 21904470.5 Wh
+Substation Substation B started the distribution
+Producer Plant C generated 23170107 Wh
+Line C transmitted 21316498 Wh with a loss factor of 0.02
+Producer Plant B generated 25410046 Wh
+Line B transmitted 22869041 Wh with a loss factor of 0.07
+Household C received 5611404 of 5658178.0 Wh
+Household D received 6428442 of 6482026.0 Wh
+Factory B received 10422294 of 10509169.0 Wh
+Big Factory received 21723397 of 21904470.5 Wh
+Simulated Step 33
+Substation Substation A started the distribution
+Producer Plant A generated 26435097 Wh
+Line A transmitted 24848991 Wh with a loss factor of 0.01
+Producer Plant B generated 65838352 Wh
+Line B transmitted 59254516 Wh with a loss factor of 0.02
+Household A received 4781063 of 4820192.0 Wh
+Household B received 6038935 of 6088359.0 Wh
+Factory A received 16016783 of 16147866.0 Wh
+Big Factory received 28633362 of 28867700.0 Wh
+Substation Substation B started the distribution
+Producer Plant C generated 31066521 Wh
+Line C transmitted 28581199 Wh with a loss factor of 0.02
+Producer Plant B generated 25942487 Wh
+Line B transmitted 23348238 Wh with a loss factor of 0.05
+Household C received 6660023 of 6713881.0 Wh
+Household D received 6019138 of 6067814.0 Wh
+Factory B received 10614147 of 10699981.0 Wh
+Big Factory received 28636127 of 28867700.0 Wh
+Simulated Step 34
+Substation Substation A started the distribution
+Producer Plant A generated 25800015 Wh
+Line A transmitted 24252014 Wh with a loss factor of 0.02
+Producer Plant B generated 64256641 Wh
+Line B transmitted 57830976 Wh with a loss factor of 0.08
+Household A received 4838632 of 4878232.0 Wh
+Household B received 4497104 of 4533909.0 Wh
+Factory A received 9258701 of 9334475.0 Wh
+Big Factory received 31744276 of 32004074.0 Wh
+Substation Substation B started the distribution
+Producer Plant C generated 31464032 Wh
+Line C transmitted 28946909 Wh with a loss factor of 0.08
+Producer Plant B generated 27490960 Wh
+Line B transmitted 24741864 Wh with a loss factor of 0.02
+Household C received 4592498 of 4629825.0 Wh
+Household D received 4307769 of 4342782.0 Wh
+Factory B received 13042456 of 13148463.0 Wh
+Big Factory received 31746048 of 32004074.0 Wh
+Simulated Step 35
+Substation Substation A started the distribution
+Producer Plant A generated 27985942 Wh
+Line A transmitted 26306785 Wh with a loss factor of 0.02
+Producer Plant B generated 69700835 Wh
+Line B transmitted 62730751 Wh with a loss factor of 0.04
+Household A received 5801004 of 5848480.0 Wh
+Household B received 7988911 of 8054293.0 Wh
+Factory A received 10090366 of 10172947.0 Wh
+Big Factory received 32578627 of 32845253.5 Wh
+Substation Substation B started the distribution
+Producer Plant C generated 36329126 Wh
+Line C transmitted 33422795 Wh with a loss factor of 0.07
+Producer Plant B generated 26907031 Wh
+Line B transmitted 24216327 Wh with a loss factor of 0.04
+Household C received 6394284 of 6445304.0 Wh
+Household D received 6481791 of 6533509.0 Wh
+Factory B received 12177785 of 12274950.0 Wh
+Big Factory received 32585260 of 32845253.5 Wh
+Simulated Step 36
+Substation Substation A started the distribution
+Producer Plant A generated 22629995 Wh
+Line A transmitted 21272195 Wh with a loss factor of 0.01
+Producer Plant B generated 56361496 Wh
+Line B transmitted 50725346 Wh with a loss factor of 0.06
+Household A received 4480987 of 4517660.0 Wh
+Household B received 8055504 of 8121431.0 Wh
+Factory A received 10617006 of 10703897.0 Wh
+Big Factory received 24422021 of 24621893.5 Wh
+Substation Substation B started the distribution
+Producer Plant C generated 25063916 Wh
+Line C transmitted 23058802 Wh with a loss factor of 0.01
+Producer Plant B generated 26736155 Wh
+Line B transmitted 24062539 Wh with a loss factor of 0.04
+Household C received 7325780 of 7386658.0 Wh
+Household D received 4312001 of 4347835.0 Wh
+Factory B received 11064589 of 11156537.0 Wh
+Big Factory received 24418969 of 24621893.5 Wh
+Simulated Step 37
+Substation Substation A started the distribution
+Producer Plant A generated 22736044 Wh
+Line A transmitted 21371881 Wh with a loss factor of 0.03
+Producer Plant B generated 56625617 Wh
+Line B transmitted 50963055 Wh with a loss factor of 0.09
+Household A received 8136091 of 8202678.0 Wh
+Household B received 6281022 of 6332427.0 Wh
+Factory A received 10225594 of 10309282.0 Wh
+Big Factory received 23846113 of 24041272.0 Wh
+Substation Substation B started the distribution
+Producer Plant C generated 26059511 Wh
+Line C transmitted 23974750 Wh with a loss factor of 0.05
+Producer Plant B generated 27629927 Wh
+Line B transmitted 24866934 Wh with a loss factor of 0.09
+Household C received 5727383 of 5774947.0 Wh
+Household D received 5898447 of 5947431.0 Wh
+Factory B received 13372588 of 13483641.0 Wh
+Big Factory received 23843265 of 24041272.0 Wh
+Simulated Step 38
+Substation Substation A started the distribution
+Producer Plant A generated 20493208 Wh
+Line A transmitted 19263615 Wh with a loss factor of 0.06
+Producer Plant B generated 51039686 Wh
+Line B transmitted 45935717 Wh with a loss factor of 0.1
+Household A received 7670520 of 7733297.0 Wh
+Household B received 4398492 of 4434490.0 Wh
+Factory A received 9248132 of 9323820.0 Wh
+Big Factory received 21941093 of 22120660.5 Wh
+Substation Substation B started the distribution
+Producer Plant C generated 22685500 Wh
+Line C transmitted 20870660 Wh with a loss factor of 0.03
+Producer Plant B generated 27150180 Wh
+Line B transmitted 24435162 Wh with a loss factor of 0.07
+Household C received 6232301 of 6284747.0 Wh
+Household D received 5695302 of 5743229.0 Wh
+Factory B received 11442150 of 11538437.0 Wh
+Big Factory received 21936067 of 22120660.5 Wh
+Simulated Step 39
+Substation Substation A started the distribution
+Producer Plant A generated 25463310 Wh
+Line A transmitted 23935511 Wh with a loss factor of 0.03
+Producer Plant B generated 63418055 Wh
+Line B transmitted 57076249 Wh with a loss factor of 0.07
+Household A received 6719360 of 6774352.0 Wh
+Household B received 6741676 of 6796851.0 Wh
+Factory A received 13329153 of 13438240.0 Wh
+Big Factory received 27110785 of 27332662.0 Wh
+Substation Substation B started the distribution
+Producer Plant C generated 30520459 Wh
+Line C transmitted 28078822 Wh with a loss factor of 0.06
+Producer Plant B generated 27292167 Wh
+Line B transmitted 24562950 Wh with a loss factor of 0.09
+Household C received 5590128 of 5635682.0 Wh
+Household D received 4511751 of 4548517.0 Wh
+Factory B received 15428161 of 15553884.0 Wh
+Big Factory received 27111730 of 27332662.0 Wh
+Simulated Step 40
+Substation Substation A started the distribution
+Producer Plant A generated 21054801 Wh
+Line A transmitted 19791512 Wh with a loss factor of 0.03
+Producer Plant B generated 52438370 Wh
+Line B transmitted 47194533 Wh with a loss factor of 0.05
+Household A received 7004392 of 7061717.0 Wh
+Household B received 8115666 of 8182086.0 Wh
+Factory A received 11596541 of 11691449.0 Wh
+Big Factory received 20134721 of 20299506.0 Wh
+Substation Substation B started the distribution
+Producer Plant C generated 21208827 Wh
+Line C transmitted 19512120 Wh with a loss factor of 0.07
+Producer Plant B generated 24657756 Wh
+Line B transmitted 22191980 Wh with a loss factor of 0.02
+Household C received 6472889 of 6527189.0 Wh
+Household D received 5052455 of 5094839.0 Wh
+Factory B received 10048119 of 10132410.0 Wh
+Big Factory received 20130635 of 20299506.0 Wh
+Simulated Step 41
+Substation Substation A started the distribution
+Producer Plant A generated 25129600 Wh
+Line A transmitted 23621824 Wh with a loss factor of 0.03
+Producer Plant B generated 62586926 Wh
+Line B transmitted 56328233 Wh with a loss factor of 0.07
+Household A received 6384544 of 6436796.0 Wh
+Household B received 6580358 of 6634213.0 Wh
+Factory A received 13839823 of 13953090.0 Wh
+Big Factory received 26572664 of 26790137.5 Wh
+Substation Substation B started the distribution
+Producer Plant C generated 26040520 Wh
+Line C transmitted 23957278 Wh with a loss factor of 0.08
+Producer Plant B generated 23815145 Wh
+Line B transmitted 21433630 Wh with a loss factor of 0.01
+Household C received 4929418 of 4969689.0 Wh
+Household D received 5171735 of 5213985.0 Wh
+Factory B received 8716701 of 8787912.0 Wh
+Big Factory received 26573052 of 26790137.5 Wh
+Simulated Step 42
+Substation Substation A started the distribution
+Producer Plant A generated 29431177 Wh
+Line A transmitted 27665306 Wh with a loss factor of 0.06
+Producer Plant B generated 73300288 Wh
+Line B transmitted 65970259 Wh with a loss factor of 0.05
+Household A received 6551808 of 6605429.0 Wh
+Household B received 6495641 of 6548802.0 Wh
+Factory A received 16344918 of 16478687.0 Wh
+Big Factory received 32121598 of 32384484.0 Wh
+Substation Substation B started the distribution
+Producer Plant C generated 40437653 Wh
+Line C transmitted 37202640 Wh with a loss factor of 0.06
+Producer Plant B generated 26392023 Wh
+Line B transmitted 23752820 Wh with a loss factor of 0.09
+Household C received 7871620 of 7933549.0 Wh
+Household D received 4760807 of 4798263.0 Wh
+Factory B received 16191339 of 16318723.0 Wh
+Big Factory received 32131692 of 32384484.0 Wh
+Simulated Step 43
+Substation Substation A started the distribution
+Producer Plant A generated 19533164 Wh
+Line A transmitted 18361174 Wh with a loss factor of 0.03
+Producer Plant B generated 48648635 Wh
+Line B transmitted 43783771 Wh with a loss factor of 0.06
+Household A received 5967072 of 6015907.0 Wh
+Household B received 5622973 of 5668992.0 Wh
+Factory A received 14613301 of 14732898.0 Wh
+Big Factory received 17970799 of 18117873.5 Wh
+Substation Substation B started the distribution
+Producer Plant C generated 20415856 Wh
+Line C transmitted 18782587 Wh with a loss factor of 0.04
+Producer Plant B generated 25627118 Wh
+Line B transmitted 23064406 Wh with a loss factor of 0.07
+Household C received 6741137 of 6798156.0 Wh
+Household D received 7955615 of 8022907.0 Wh
+Factory B received 9184328 of 9262013.0 Wh
+Big Factory received 17965911 of 18117873.5 Wh
+Simulated Step 44
+Substation Substation A started the distribution
+Producer Plant A generated 20160057 Wh
+Line A transmitted 18950453 Wh with a loss factor of 0.02
+Producer Plant B generated 50209952 Wh
+Line B transmitted 45188956 Wh with a loss factor of 0.05
+Household A received 6343807 of 6395726.0 Wh
+Household B received 5618146 of 5664126.0 Wh
+Factory A received 13778459 of 13891224.0 Wh
+Big Factory received 19199497 of 19356628.0 Wh
+Substation Substation B started the distribution
+Producer Plant C generated 22976084 Wh
+Line C transmitted 21137997 Wh with a loss factor of 0.02
+Producer Plant B generated 27963963 Wh
+Line B transmitted 25167566 Wh with a loss factor of 0.02
+Household C received 5132439 of 5175708.0 Wh
+Household D received 6335777 of 6389190.0 Wh
+Factory B received 15642537 of 15774410.0 Wh
+Big Factory received 19194808 of 19356628.0 Wh
+Simulated Step 45
+Substation Substation A started the distribution
+Producer Plant A generated 28533301 Wh
+Line A transmitted 26821302 Wh with a loss factor of 0.05
+Producer Plant B generated 71064069 Wh
+Line B transmitted 63957662 Wh with a loss factor of 0.03
+Household A received 7322888 of 7382820.0 Wh
+Household B received 5526953 of 5572187.0 Wh
+Factory A received 12387993 of 12489378.0 Wh
+Big Factory received 32770563 of 33038760.5 Wh
+Substation Substation B started the distribution
+Producer Plant C generated 33552651 Wh
+Line C transmitted 30868438 Wh with a loss factor of 0.06
+Producer Plant B generated 23732554 Wh
+Line B transmitted 21359298 Wh with a loss factor of 0.08
+Household C received 4656137 of 4693098.0 Wh
+Household D received 6144314 of 6193088.0 Wh
+Factory B received 8648717 of 8717371.0 Wh
+Big Factory received 32778565 of 33038760.5 Wh
+Simulated Step 46
+Substation Substation A started the distribution
+Producer Plant A generated 24229088 Wh
+Line A transmitted 22775342 Wh with a loss factor of 0.05
+Producer Plant B generated 60344143 Wh
+Line B transmitted 54309728 Wh with a loss factor of 0.07
+Household A received 8113578 of 8179981.0 Wh
+Household B received 6534417 of 6587896.0 Wh
+Factory A received 8692773 of 8763916.0 Wh
+Big Factory received 26872149 of 27092074.0 Wh
+Substation Substation B started the distribution
+Producer Plant C generated 28107187 Wh
+Line C transmitted 25858612 Wh with a loss factor of 0.02
+Producer Plant B generated 27246134 Wh
+Line B transmitted 24521520 Wh with a loss factor of 0.03
+Household C received 6201637 of 6252631.0 Wh
+Household D received 6064273 of 6114137.0 Wh
+Factory B received 11243096 of 11335543.0 Wh
+Big Factory received 26871124 of 27092074.0 Wh
+Simulated Step 47
+Substation Substation A started the distribution
+Producer Plant A generated 21167665 Wh
+Line A transmitted 19897605 Wh with a loss factor of 0.03
+Producer Plant B generated 52719467 Wh
+Line B transmitted 47447520 Wh with a loss factor of 0.09
+Household A received 6055939 of 6105502.0 Wh
+Household B received 5150367 of 5192519.0 Wh
+Factory A received 12621882 of 12725181.0 Wh
+Big Factory received 21758467 of 21936540.5 Wh
+Substation Substation B started the distribution
+Producer Plant C generated 24217107 Wh
+Line C transmitted 22279738 Wh with a loss factor of 0.06
+Producer Plant B generated 27988833 Wh
+Line B transmitted 25189949 Wh with a loss factor of 0.1
+Household C received 4183427 of 4218498.0 Wh
+Household D received 5697659 of 5745425.0 Wh
+Factory B received 15834431 of 15967176.0 Wh
+Big Factory received 21754168 of 21936540.5 Wh
+Simulated Step 48
+Substation Substation A started the distribution
+Producer Plant A generated 28469582 Wh
+Line A transmitted 26761407 Wh with a loss factor of 0.02
+Producer Plant B generated 70905373 Wh
+Line B transmitted 63814835 Wh with a loss factor of 0.03
+Household A received 7622079 of 7684459.0 Wh
+Household B received 7251148 of 7310492.0 Wh
+Factory A received 15266170 of 15391110.0 Wh
+Big Factory received 30218422 of 30465732.0 Wh
+Substation Substation B started the distribution
+Producer Plant C generated 36178891 Wh
+Line C transmitted 33284579 Wh with a loss factor of 0.03
+Producer Plant B generated 25730499 Wh
+Line B transmitted 23157449 Wh with a loss factor of 0.09
+Household C received 5380452 of 5423188.0 Wh
+Household D received 8107967 of 8172367.0 Wh
+Factory B received 12727952 of 12829048.0 Wh
+Big Factory received 30225656 of 30465732.0 Wh
+Simulated Step 49
+Substation Substation A started the distribution
+Producer Plant A generated 26095357 Wh
+Line A transmitted 24529635 Wh with a loss factor of 0.03
+Producer Plant B generated 64992210 Wh
+Line B transmitted 58492989 Wh with a loss factor of 0.07
+Household A received 6983361 of 7040514.0 Wh
+Household B received 5791858 of 5839260.0 Wh
+Factory A received 10265696 of 10349712.0 Wh
+Big Factory received 29990853 of 30236301.0 Wh
+Substation Substation B started the distribution
+Producer Plant C generated 34413101 Wh
+Line C transmitted 31660052 Wh with a loss factor of 0.06
+Producer Plant B generated 29448873 Wh
+Line B transmitted 26503985 Wh with a loss factor of 0.05
+Household C received 8237520 of 8304318.0 Wh
+Household D received 5481452 of 5525901.0 Wh
+Factory B received 14451974 of 14569164.0 Wh
+Big Factory received 29993089 of 30236301.0 Wh
+Simulated Step 50
+Substation Substation A started the distribution
+Producer Plant A generated 28479942 Wh
+Line A transmitted 26771145 Wh with a loss factor of 0.04
+Producer Plant B generated 70931174 Wh
+Line B transmitted 63838056 Wh with a loss factor of 0.02
+Household A received 8066515 of 8132533.0 Wh
+Household B received 8144267 of 8210921.0 Wh
+Factory A received 9255652 of 9331402.0 Wh
+Big Factory received 32571382 of 32837949.0 Wh
+Substation Substation B started the distribution
+Producer Plant C generated 36753070 Wh
+Line C transmitted 33812824 Wh with a loss factor of 0.07
+Producer Plant B generated 26115677 Wh
+Line B transmitted 23504109 Wh with a loss factor of 0.07
+Household C received 5199215 of 5240508.0 Wh
+Household D received 7377813 of 7436408.0 Wh
+Factory B received 12160698 of 12257279.0 Wh
+Big Factory received 32579205 of 32837949.0 Wh

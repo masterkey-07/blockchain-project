@@ -25,6 +25,7 @@ contract Consumer {
             energyToken.balanceOf(address(this)) >= amount,
             "Insufficient energy tokens"
         );
+
         energyToken.burn(amount);
     }
 }
