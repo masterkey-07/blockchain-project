@@ -1,6 +1,5 @@
 from time import sleep
 from .substation import Substation
-from .power_plant import PowerPlant
 
 class GridSimulator:
     def __init__(self, substations:list[Substation]):
