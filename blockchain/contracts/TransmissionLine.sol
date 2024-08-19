@@ -1,57 +1,31 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.0;
+pragma solidity ^0.8.20;
 
 import "./EnergyToken.sol";
 
-contract TransmissionLineContract {
+contract TransmissionLine {
     EnergyToken public energyToken;
-    address public owner;
+    address public substation;
+    uint256 public constant MAX_LOSS_PERCENTAGE = 5; // 5% maximum allowed loss
 
-    // Events for logging
-    event EnergyTransferred(
-        address indexed producer,
-        address indexed substation,
-        uint256 amount
-    );
-
-    constructor(address energyTokenAddress) {
-        energyToken = EnergyToken(energyTokenAddress);
-        owner = msg.sender;
+    constructor(address _energyTokenAddress, address _substation) {
+        energyToken = EnergyToken(_energyTokenAddress);
+        substation = _substation;
     }
 
-    // Function to transfer energy tokens from a producer to the substation
-    function transferEnergyToSubstation(
-        address producer,
-        address substation,
-        uint256 amount
-    ) external {
+    function transmitEnergy(uint256 amount) external {
         require(
-            msg.sender == owner,
-            "Only the owner can initiate the transfer"
-        );
-        require(
-            energyToken.balanceOf(producer) >= amount,
-            "Producer has insufficient energy tokens"
+            energyToken.transferFrom(msg.sender, address(this), amount),
+            "Transfer failed"
         );
 
-        // Transfer energy tokens from the producer to the substation
-        energyToken.transferFrom(producer, substation, amount);
+        uint256 loss = (amount * MAX_LOSS_PERCENTAGE) / 100;
+        uint256 transmittedAmount = amount - loss;
 
-        // Emit an event for tracking the transfer
-        emit EnergyTransferred(producer, substation, amount);
-    }
-
-    // Function to check the balance of energy tokens for a producer
-    function checkProducerBalance(
-        address producer
-    ) external view returns (uint256) {
-        return energyToken.balanceOf(producer);
-    }
-
-    // Function to check the balance of energy tokens for a substation
-    function checkSubstationBalance(
-        address substation
-    ) external view returns (uint256) {
-        return energyToken.balanceOf(substation);
+        energyToken.burn(loss);
+        require(
+            energyToken.transfer(substation, transmittedAmount),
+            "Transfer to substation failed"
+        );
     }
 }

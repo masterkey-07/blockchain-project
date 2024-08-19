@@ -1,28 +1,29 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.0;
+pragma solidity ^0.8.20;
 
 import "./EnergyToken.sol";
 
-contract SubstationContract {
+contract Substation {
     EnergyToken public energyToken;
-    address public owner;
+    mapping(address => bool) public registeredConsumers;
 
-    constructor(address tokenAddress) {
-        energyToken = EnergyToken(tokenAddress);
-        owner = msg.sender;
+    constructor(address _energyTokenAddress) {
+        energyToken = EnergyToken(_energyTokenAddress);
     }
 
-    function manageTransaction(
-        address producer,
-        address consumer,
-        uint256 energyAmount
-    ) external {
-        require(msg.sender == owner, "Only the owner can manage transactions");
-        require(
-            energyToken.balanceOf(producer) >= energyAmount,
-            "Producer has insufficient energy tokens"
-        );
+    function registerConsumer(address consumer) external {
+        registeredConsumers[consumer] = true;
+    }
 
-        energyToken.transferFrom(producer, consumer, energyAmount); // Facilitate the transfer of energy tokens
+    function unregisterConsumer(address consumer) external {
+        registeredConsumers[consumer] = false;
+    }
+
+    function distributeEnergy(address consumer, uint256 amount) external {
+        require(registeredConsumers[consumer], "Consumer not registered");
+        require(
+            energyToken.transferFrom(msg.sender, consumer, amount),
+            "Transfer failed"
+        );
     }
 }
