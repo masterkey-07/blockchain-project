@@ -1,6 +1,8 @@
 {
   "name": "hardhat-project",
   "scripts": {
+    "node": "hardhat node",
+    "ignition:localhost": "hardhat ignition deploy ignition/modules/grid.ts --network localhost",
     "test": "hardhat test"
   },
   "dependencies": {
