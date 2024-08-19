@@ -8,6 +8,14 @@ class PowerPlant:
     def get_max_output(self):
         return round(self.__max_output * self.__time_period)
 
+    def get_available_output(self):
+        max_output = self.get_max_output()
+        
+        if max(max_output - self.__current_output, 0) == 0:
+            return 0
+        
+        return max_output - self.__current_output
+
     def reset(self):
         self.__current_output = 0
 

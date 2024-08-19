@@ -2,9 +2,7 @@ from .substation import Substation
 from .power_plant import PowerPlant
 
 class GridSimulator:
-    def __init__(self, substations:list[Substation], producers:list[PowerPlant]):
-        
-        self.__producers:list[PowerPlant] = producers
+    def __init__(self, substations:list[Substation]):
         self.__substations:list[Substation] = substations
 
     def simulate(self, steps=1):
@@ -14,5 +12,5 @@ class GridSimulator:
             for substation in self.__substations:
                 substation.distribute_power()
             
-            for producer in self.__producers:
-                producer.reset()
+            for substation in self.__substations:
+                substation.reset()
