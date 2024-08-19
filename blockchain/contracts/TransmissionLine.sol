@@ -5,27 +5,35 @@ import "./EnergyToken.sol";
 
 contract TransmissionLine {
     EnergyToken public energyToken;
-    address public substation;
-    uint256 public constant MAX_LOSS_PERCENTAGE = 5; // 5% maximum allowed loss
+    mapping(address => bool) public authorizedOperators;
 
-    constructor(address _energyTokenAddress, address _substation) {
+    constructor(address _energyTokenAddress) {
         energyToken = EnergyToken(_energyTokenAddress);
-        substation = _substation;
+        authorizedOperators[msg.sender] = true;
     }
 
-    function transmitEnergy(uint256 amount) external {
+    modifier onlyAuthorized() {
+        require(authorizedOperators[msg.sender], "Not authorized");
+        _;
+    }
+
+    function addAuthorizedOperator(address operator) external onlyAuthorized {
+        authorizedOperators[operator] = true;
+    }
+
+    function removeAuthorizedOperator(
+        address operator
+    ) external onlyAuthorized {
+        authorizedOperators[operator] = false;
+    }
+
+    function transmitEnergy(
+        address to,
+        uint256 amount
+    ) external onlyAuthorized {
         require(
-            energyToken.transferFrom(msg.sender, address(this), amount),
+            energyToken.transferFrom(msg.sender, to, amount),
             "Transfer failed"
-        );
-
-        uint256 loss = (amount * MAX_LOSS_PERCENTAGE) / 100;
-        uint256 transmittedAmount = amount - loss;
-
-        energyToken.burn(loss);
-        require(
-            energyToken.transfer(substation, transmittedAmount),
-            "Transfer to substation failed"
         );
     }
 }

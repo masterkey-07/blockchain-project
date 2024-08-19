@@ -1,20 +1,20 @@
 import { expect } from "chai";
 import { ethers } from "hardhat";
 import { Contract, Signer } from "ethers";
+import { EnergyToken, TransmissionLine } from "../typechain-types";
+import { DeployableTransaction } from "./types";
 
 describe("TransmissionLine", function () {
-  let energyToken: Contract;
-  let transmissionLine: Contract;
+  let transmissionLine: TransmissionLine & DeployableTransaction;
+  let energyToken: EnergyToken & DeployableTransaction;
   let owner: Signer;
-  let producer: Signer;
-  let substation: Signer;
-  let otherAccount: Signer;
-
-  const INITIAL_SUPPLY = ethers.parseEther("1000000");
-  const TRANSMISSION_AMOUNT = ethers.parseEther("1000");
+  let authorizedOperator: Signer;
+  let to: Signer;
+  let unauthorizedAccount: Signer;
 
   beforeEach(async function () {
-    [owner, producer, substation, otherAccount] = await ethers.getSigners();
+    [owner, authorizedOperator, to, unauthorizedAccount] =
+      await ethers.getSigners();
 
     const EnergyToken = await ethers.getContractFactory("EnergyToken");
     energyToken = await EnergyToken.deploy();
@@ -23,94 +23,84 @@ describe("TransmissionLine", function () {
       "TransmissionLine"
     );
     transmissionLine = await TransmissionLine.deploy(
-      await energyToken.getAddress(),
-      await substation.getAddress()
+      await energyToken.getAddress()
     );
 
-    // Mint some tokens to the producer
+    await transmissionLine.addAuthorizedOperator(
+      await authorizedOperator.getAddress()
+    );
+    await energyToken.mint(
+      await authorizedOperator.getAddress(),
+      ethers.parseEther("1000")
+    );
     await energyToken
-      .connect(owner)
-      .mint(await producer.getAddress(), INITIAL_SUPPLY);
-
-    // Approve TransmissionLine to spend producer's tokens
-    await energyToken
-      .connect(producer)
-      .approve(await transmissionLine.getAddress(), INITIAL_SUPPLY);
+      .connect(authorizedOperator)
+      .approve(await transmissionLine.getAddress(), ethers.parseEther("1000"));
   });
 
-  describe("Deployment", function () {
-    it("Should set the correct EnergyToken address", async function () {
-      expect(await transmissionLine.energyToken()).to.equal(
-        await energyToken.getAddress()
+  describe("Authorization", function () {
+    it("Should add an authorized operator", async function () {
+      await transmissionLine.addAuthorizedOperator(
+        await unauthorizedAccount.getAddress()
       );
+      expect(
+        await transmissionLine.authorizedOperators(
+          await unauthorizedAccount.getAddress()
+        )
+      ).to.be.true;
     });
 
-    it("Should set the correct substation address", async function () {
-      expect(await transmissionLine.substation()).to.equal(
-        await substation.getAddress()
+    it("Should remove an authorized operator", async function () {
+      await transmissionLine.removeAuthorizedOperator(
+        await authorizedOperator.getAddress()
       );
-    });
-  });
-
-  describe("Transmit Energy", function () {
-    it("Should transmit energy with correct loss", async function () {
-      await transmissionLine
-        .connect(producer)
-        .transmitEnergy(TRANSMISSION_AMOUNT);
-
-      const expectedLoss = (TRANSMISSION_AMOUNT * BigInt(5)) / BigInt(100);
-      const expectedTransmitted = TRANSMISSION_AMOUNT - expectedLoss;
-
       expect(
-        await energyToken.balanceOf(await substation.getAddress())
-      ).to.equal(expectedTransmitted);
-      expect(
-        await energyToken.balanceOf(await transmissionLine.getAddress())
-      ).to.equal(0);
+        await transmissionLine.authorizedOperators(
+          await authorizedOperator.getAddress()
+        )
+      ).to.be.false;
     });
 
-    it("Should fail if sender doesn't have enough tokens", async function () {
+    it("Should fail when unauthorized account tries to add operator", async function () {
       await expect(
         transmissionLine
-          .connect(otherAccount)
-          .transmitEnergy(TRANSMISSION_AMOUNT)
-      ).to.be.revertedWith("ERC20: insufficient allowance");
+          .connect(unauthorizedAccount)
+          .addAuthorizedOperator(await unauthorizedAccount.getAddress())
+      ).to.be.revertedWith("Not authorized");
+    });
+  });
+
+  describe("Energy transmission", function () {
+    it("Should transmit energy tokens", async function () {
+      const amount = ethers.parseEther("10");
+      await transmissionLine
+        .connect(authorizedOperator)
+        .transmitEnergy(await to.getAddress(), amount);
+      expect(await energyToken.balanceOf(await to.getAddress())).to.equal(
+        amount
+      );
     });
 
-    it("Should fail if TransmissionLine is not approved to spend tokens", async function () {
-      await energyToken
-        .connect(producer)
-        .approve(await transmissionLine.getAddress(), 0);
+    it("Should fail if there are insufficient tokens", async function () {
+      const amount = ethers.parseEther("1001");
       await expect(
-        transmissionLine.connect(producer).transmitEnergy(TRANSMISSION_AMOUNT)
-      ).to.be.revertedWith("ERC20: insufficient allowance");
+        transmissionLine
+          .connect(authorizedOperator)
+          .transmitEnergy(await to.getAddress(), amount)
+      ).to.be.revertedWithCustomError(
+        { interface: energyToken.interface },
+        "ERC20InsufficientAllowance"
+      );
     });
 
-    it("Should emit correct Transfer events", async function () {
-      const expectedLoss = (TRANSMISSION_AMOUNT * BigInt(5)) / BigInt(100);
-      const expectedTransmitted = TRANSMISSION_AMOUNT - expectedLoss;
+    it("Should fail if called by unauthorized account", async function () {
+      const amount = ethers.parseEther("10");
 
       await expect(
-        transmissionLine.connect(producer).transmitEnergy(TRANSMISSION_AMOUNT)
-      )
-        .to.emit(energyToken, "Transfer")
-        .withArgs(
-          await producer.getAddress(),
-          await transmissionLine.getAddress(),
-          TRANSMISSION_AMOUNT
-        )
-        .and.to.emit(energyToken, "Transfer")
-        .withArgs(
-          await transmissionLine.getAddress(),
-          ethers.ZeroAddress,
-          expectedLoss
-        )
-        .and.to.emit(energyToken, "Transfer")
-        .withArgs(
-          await transmissionLine.getAddress(),
-          await substation.getAddress(),
-          expectedTransmitted
-        );
+        transmissionLine
+          .connect(unauthorizedAccount)
+          .transmitEnergy(await to.getAddress(), amount)
+      ).to.be.revertedWith("Not authorized");
     });
   });
 });
