@@ -1,42 +1,30 @@
-from models import *
+from models.consumer import Consumer
+from models.substation import Substation
+from models.power_plant import PowerPlant
+from models.grid_simulator import GridSimulator
+from models.transmission_line import TransmissionLine
 
-# Create producers
-plant1 = PowerPlant("Plant 1", 500)
-plant2 = PowerPlant("Plant 2", 700)
+TIME_PERIOD = 1/60
+M = 1_000_000
 
-# Create transmission lines with loss factors
-line1 = TransmissionLine("Line 1", 0.05)  # 5% loss
-line2 = TransmissionLine("Line 2", 0.10)  # 10% loss
+plant1 = PowerPlant("Plant 1", 500 * M, TIME_PERIOD)
+plant2 = PowerPlant("Plant 2", 700 * M, TIME_PERIOD)
 
-# Create consumers
 consumers = [
-    Consumer("Household A", 100),
-    Consumer("Household B", 150),
-    Consumer("Factory A", 200),
-    Consumer("Factory B", 250),
-    Consumer("Office A", 300),
-    Consumer("Office B", 350)
+    Consumer("Household A", 50 * M, 100 * M, TIME_PERIOD),
+    Consumer("Factory A", 100 * M, 200 * M, TIME_PERIOD)
 ]
 
-# Create substations and connect producers, transmission lines, and consumers
-substation1 = Substation("Substation 1")
-substation1.connect_producer(plant1, line1)
-substation1.connect_consumer(consumers[0])
-substation1.connect_consumer(consumers[1])
-substation1.connect_consumer(consumers[2])
+line1 = TransmissionLine("Line 1", 0.05)
+line2 = TransmissionLine("Line 2", 0.10)
 
-substation2 = Substation("Substation 2")
-substation2.connect_producer(plant2, line2)
-substation2.connect_consumer(consumers[3])
-substation2.connect_consumer(consumers[4])
-substation2.connect_consumer(consumers[5])
+substation = Substation("Substation 1")
 
-# Create grid control and add substations
-grid = GridControl()
-grid.add_producer(plant1)
-grid.add_producer(plant2)
-grid.add_substation(substation1)
-grid.add_substation(substation2)
+substation.connect_producer(plant1, line1)
+substation.connect_producer(plant2, line2)
+substation.connect_consumer(consumers[0])
+substation.connect_consumer(consumers[1])
 
-# Balance the grid
-grid.balance_power()
+simulator = GridSimulator(substations=[substation], producers=[plant1, plant2])
+
+simulator.simulate(1)
