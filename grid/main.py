@@ -4,27 +4,48 @@ from models.power_plant import PowerPlant
 from models.grid_simulator import GridSimulator
 from models.transmission_line import TransmissionLine
 
-TIME_PERIOD = 1/60
-M = 1_000_000
+STEPS = 1
+TIME_PERIOD = 1 #5/60
+M = 1/10 #1_000_000
 
-plant1 = PowerPlant("Plant 1", 500 * M, TIME_PERIOD)
-plant2 = PowerPlant("Plant 2", 700 * M, TIME_PERIOD)
+# Define Power Plants
+plantA = PowerPlant("Plant A", 500 * M, TIME_PERIOD)
+plantB = PowerPlant("Plant B", 700 * M, TIME_PERIOD)
+plantC = PowerPlant("Plant C", 900 * M, TIME_PERIOD)
 
-consumers = [
-    Consumer("Household A", 50 * M, 100 * M, TIME_PERIOD),
-    Consumer("Factory A", 100 * M, 200 * M, TIME_PERIOD)
-]
+# Define Consumer
+household_a = Consumer("Household A", 50 * M, 100 * M, TIME_PERIOD),
+household_b = Consumer("Household B", 50 * M, 100 * M, TIME_PERIOD),
+household_c = Consumer("Household C", 50 * M, 100 * M, TIME_PERIOD),
+household_d = Consumer("Household D", 50 * M, 100 * M, TIME_PERIOD),
+factory_a = Consumer("Factory A", 100 * M, 200 * M, TIME_PERIOD),
+factory_b = Consumer("Factory B", 100 * M, 200 * M, TIME_PERIOD),
+big_factory = Consumer("Big Factory", 400 * M, 800 * M, TIME_PERIOD)
 
-line1 = TransmissionLine("Line 1", 0.05)
-line2 = TransmissionLine("Line 2", 0.10)
+# Define Lines
+lineA = TransmissionLine("Line A", 0.06)
+lineB = TransmissionLine("Line B", 0.10)
+lineC = TransmissionLine("Line C", 0.8)
+lineD = TransmissionLine("Line C", 0.12)
 
-substation = Substation("Substation 1")
+# Define Substation A
+substationA = Substation("Substation A")
+substationA.connect_producer(plantA, lineA)
+substationA.connect_producer(plantB, lineB)
+substationA.connect_consumer(household_a)
+substationA.connect_consumer(household_b)
+substationA.connect_consumer(factory_a)
+substationA.connect_consumer(big_factory)
 
-substation.connect_producer(plant1, line1)
-substation.connect_producer(plant2, line2)
-substation.connect_consumer(consumers[0])
-substation.connect_consumer(consumers[1])
+# Define Substation B
+substationB = Substation("Substation B")
+substationB.connect_producer(plantC, lineC)
+substationB.connect_producer(plantB, lineB)
+substationB.connect_consumer(household_c)
+substationB.connect_consumer(household_d)
+substationB.connect_consumer(factory_b)
+substationB.connect_consumer(big_factory)
 
-simulator = GridSimulator(substations=[substation], producers=[plant1, plant2])
-
-simulator.simulate(1)
+# Run Simulation
+simulator = GridSimulator(substations=[substationA, substationB], producers=[plantA, plantB, plantC])
+simulator.simulate(steps=STEPS)
