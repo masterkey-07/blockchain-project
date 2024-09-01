@@ -14,24 +14,24 @@ Para isso, esse projeto implementa
 
 ```mermaid
 graph TD;
-    A --> T1;
-    B --> T2;
-    B --> T3;
-    C --> T4;
+    ProdutorA --> LinhaTransmissãoA;
+    ProdutorB --> LinhaTransmissãoB;
+    ProdutorB --> LinhaTransmissãoC;
+    ProdutorC --> LinhaTransmissãoD;
 
-    T1 --> S1;
-    T2 --> S1;
-    T3 --> S2;
-    T4 --> S2;
+    LinhaTransmissãoA --> SubestaçãoA;
+    LinhaTransmissãoB --> SubestaçãoA;
+    LinhaTransmissãoC --> SubestaçãoB;
+    LinhaTransmissãoD --> SubestaçãoB;
 
-    S1 --> C1;
-    S1 --> C2;
-    S1 --> C3;
-    S1 --> C4;
-    S2 --> C4;
-    S2 --> C5;
-    S2 --> C6;
-    S2 --> C7;
+    SubestaçãoA --> CasaA;
+    SubestaçãoA --> CasaB;
+    SubestaçãoA --> PequenaEmpresaA;
+    SubestaçãoA --> GrandeEmpresa;
+    SubestaçãoB --> GrandeEmpresa;
+    SubestaçãoB --> CasaC;
+    SubestaçãoB --> CasaD;
+    SubestaçãoB --> PequenaEmpresaB;
 ```
 
 ## Tecnologias Utilizadas
