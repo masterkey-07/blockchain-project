@@ -1,15 +1,50 @@
 # Blockchain Project - Gestão Inteligente do Smart Grid
 
-O projeto implementa um simulador de uma rede elétrica, uma série de contratos para assinar as transações de energia, e por fim uma funcionalidade que gera um relatório das transações que ocorreram.
+## Sobre o Projeto
+
+O projeto faz uma proposta de um sistema que busca melhorar o controle sobre uma [Rede elétrica inteligente](https://pt.wikipedia.org/wiki/Rede_el%C3%A9trica_inteligente), com vários [smart-meters](https://en.wikipedia.org/wiki/Smart_meter) instalados por ela.
+
+Para isso, esse projeto implementa
+
+- Simulador da rede elétrica.
+- Contratos para gerir a rede.
+- Gerador de relatório das transações.
+
+## Sobre a Simulação
+
+```mermaid
+graph TD;
+    A --> T1;
+    B --> T2;
+    B --> T3;
+    C --> T4;
+
+    T1 --> S1;
+    T2 --> S1;
+    T3 --> S2;
+    T4 --> S2;
+
+    S1 --> C1;
+    S1 --> C2;
+    S1 --> C3;
+    S1 --> C4;
+    S2 --> C4;
+    S2 --> C5;
+    S2 --> C6;
+    S2 --> C7;
+```
 
 ## Tecnologias Utilizadas
 
-- Simulação da Grid
-  - Python
-  - XXX
-- Blockchain
-  - hardhat
-  - chai
+- Simulador da rede elétrica & Gerador de relatório das transações
+  - [Python](): Linguagem de Programação
+  - [web3 (python library)](): Biblioteca para interação com Ethereum
+- Contratos para gerir a rede
+  - [Solidity](): Linguagem de programação usada para os contratos
+  - [TypeScript](): Linguagem de programação para desenvolvimento dos testes
+  - [chai](): Biblioteca de Testes
+  - [hardhat](): Ambiente de desenvolvimento Ethereum
+  - [ethers](): Biblioteca para desenvolvimento de Ethereum
 
 ## Instalação das Dependências
 
@@ -17,10 +52,6 @@ Garanta que haja os seguintes estejam instalados programas
 
 - [NodeJS]()
 - [Python]()
-- Gerenciador de Pacotes do Node
-  - [npm]()
-  - [pnpm]()
-  - [yarn]()
 
 Instalando as dependências do Simulador da Grid
 
