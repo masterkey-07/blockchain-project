@@ -2,17 +2,71 @@
 
 O projeto implementa um simulador de uma rede elétrica, uma série de contratos para assinar as transações de energia, e por fim uma funcionalidade que gera um relatório das transações que ocorreram.
 
-## Apresentação do Projeto
+## Tecnologias Utilizadas
 
-### Escopo
+- Simulação da Grid
+  - Python
+  - XXX
+- Blockchain
+  - hardhat
+  - chai
 
-### Tecnologias Utilizadas
+## Instalação das Dependências
 
-### O que já foi feito?
+Garanta que haja os seguintes estejam instalados programas
 
-### O que falta ser feito?
+- [NodeJS]()
+- [Python]()
+- Gerenciador de Pacotes do Node
+  - [npm]()
+  - [pnpm]()
+  - [yarn]()
 
-### Como vai ser a demo?
+Instalando as dependências do Simulador da Grid
+
+```bash
+cd grid
+cd pip install -r requirements.txt
+```
+
+Instalando as dependências da Blockchain
+
+```bash
+cd blockchain
+npm i
+```
+
+## Execução do Projeto
+
+### Execução dos Testes
+
+```bash
+npm run test
+```
+
+### Execução da Rede de Blockchain Local
+
+```bash
+npm run node
+```
+
+### Deploy dos Contratos na Rede local
+
+```bash
+npm run ignition:localhost
+```
+
+### Execução da Simulação da Rede Elétrica
+
+```bash
+python3 main.py
+```
+
+## Oportunidades
+
+- Desenvolver Front
+- Melhorar contratos
+- ???
 
 # Modelo do Negócio
 
@@ -32,8 +86,6 @@ Time de desenvolvimento, time de suporte, smart-meters
 
 Possibilitar a gestão inteligente da energia para distribuidores de energia elétrica, focando em pequenas e médias empresas
 
-> Idéia: A nossa "inteligência" se refere a possibilidade de ter uma maior confiaça no sistema de energia. (um sistema que seria capaz de prevenir um blackout).
-
 ### Customer Relationships
 
 Assistência técnica, promoções em smart-meters e atualizações gratuitas
@@ -48,8 +100,8 @@ Consumidores e geradores de energia elétrica, principalmente em pequena e médi
 
 ### Cost Structure
 
-Produção dos smart-meters e estrutura de trabalho para devs e suporte
+Produção dos smart-meters e estrutura de trabalho para os desenvolvedores e suporte
 
 ### Revenue Streams
 
-Assinaturas do software, venda dos smartmeters, planos de assistência técnica
+Assinaturas do software, venda dos smart-meters, planos de assistência técnica
