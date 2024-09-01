@@ -1,4 +1,6 @@
-# Blockchain Project
+# Blockchain Project - Gestão Inteligente do Smart Grid
+
+O projeto implementa um simulador de uma rede elétrica, uma série de contratos para assinar as transações de energia, e por fim uma funcionalidade que gera um relatório das transações que ocorreram.
 
 ## Apresentação do Projeto
 
@@ -12,7 +14,7 @@
 
 ### Como vai ser a demo?
 
-## Business Model Canvas
+# Modelo do Negócio
 
 ### Key Partners
 
