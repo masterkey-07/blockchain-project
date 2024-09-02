@@ -55,7 +55,7 @@ graph TD;
 
 ### Pré Requisitos
 
-Garanta que haja os seguintes programas estejam instalados
+Garanta que os seguintes programas estejam instalados
 
 - [NodeJS](https://nodejs.org/en/download/package-manager)
 - [Python](https://www.python.org/downloads/)
