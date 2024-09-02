@@ -9,6 +9,7 @@ Para isso, esse projeto implementa
 - Simulador da rede elétrica.
 - Contratos para gerir a rede.
 - Gerador de relatório das transações.
+- _UI para gestão e monitoramento da rede (TODO)_
 
 ## Sobre a Simulação
 
@@ -37,30 +38,32 @@ graph TD;
 ## Tecnologias Utilizadas
 
 - Simulador da rede elétrica & Gerador de relatório das transações
-  - [Python](): Linguagem de Programação
-  - [web3 (python library)](): Biblioteca para interação com Ethereum
+  - [Python](https://www.python.org/): Linguagem de Programação
+  - [web3 (python library)](https://web3py.readthedocs.io/en/stable/): Biblioteca para interação com Ethereum
 - Contratos para gerir a rede
-  - [Solidity](): Linguagem de programação usada para os contratos
-  - [TypeScript](): Linguagem de programação para desenvolvimento dos testes
-  - [chai](): Biblioteca de Testes
-  - [hardhat](): Ambiente de desenvolvimento Ethereum
-  - [ethers](): Biblioteca para desenvolvimento de Ethereum
+  - [Solidity](https://soliditylang.org/): Linguagem de programação usada para os contratos
+  - [TypeScript](https://www.typescriptlang.org/): Linguagem de programação para desenvolvimento dos testes
+  - [chai](https://www.chaijs.com/): Biblioteca de Testes
+  - [hardhat](https://hardhat.org/): Ambiente de desenvolvimento Ethereum
+  - [ethers](https://docs.ethers.org/v5/): Biblioteca para desenvolvimento de Ethereum
 
 ## Instalação das Dependências
 
-Garanta que haja os seguintes estejam instalados programas
+### Pré Requisitos
 
-- [NodeJS]()
-- [Python]()
+Garanta que haja os seguintes programas estejam instalados
 
-Instalando as dependências do Simulador da Grid
+- [NodeJS](https://nodejs.org/en/download/package-manager)
+- [Python](https://www.python.org/downloads/)
+
+### Instalação das dependências do Simulador
 
 ```bash
 cd grid
 cd pip install -r requirements.txt
 ```
 
-Instalando as dependências da Blockchain
+### Instalação das dependências para o ambiente de desenvolvimento dos contratos
 
 ```bash
 cd blockchain
@@ -69,35 +72,42 @@ npm i
 
 ## Execução do Projeto
 
-### Execução dos Testes
+### Execução dos testes dos contratos
 
 ```bash
+cd blockchain
 npm run test
 ```
 
 ### Execução da Rede de Blockchain Local
 
 ```bash
+cd blockchain
 npm run node
 ```
 
 ### Deploy dos Contratos na Rede local
 
 ```bash
+cd blockchain
 npm run ignition:localhost
 ```
 
 ### Execução da Simulação da Rede Elétrica
 
 ```bash
+cd grid
 python3 main.py
 ```
 
 ## Oportunidades
 
-- Desenvolver Front
+- Implementar teste de integração
+- Simulações mais realistas
+- Desenvolver UI para monitorar e configurar a rede
 - Melhorar contratos
-- ???
+  - Performance
+  - Integridade
 
 # Modelo do Negócio
 
