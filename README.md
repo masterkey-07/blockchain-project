@@ -13,6 +13,10 @@ Para isso, esse projeto implementa
 
 ## Sobre a Simulação
 
+A simulação utiliza de 3 produtores, 4 linhas de transmissão, 2 subestações e 7 consumidores.
+
+Distribuídos e conectados conforme o gráfico abaixo.
+
 ```mermaid
 graph TD;
     ProdutorA --> LinhaTransmissãoA;
